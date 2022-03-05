@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+            <div id="da-slider" class="da-slider">
+                <div class="triangle"></div>
+                <!-- mask elemet use for masking background image -->
+                <div class="mask"></div>
+                <!-- All slides centred in container element -->
+                <div class="container">
+                    <!-- Start first slide -->
+                    <div class="da-slide">
+                        <h2 class="fittext2">Добро пожаловать в Linux Club!</h2>
+                        <h4>Отзывчивость и готовность помочь вам</h4>
+                        <p>Если вы желаете установить операционную систему Linux или хотите произвести консультацию, то наша команда команда отзывчивых разработчиков готова помочь вам!    </p>
+                        <a href="html/index1.html" class="da-link button">Узнать больше</a>
+                        <div class="da-img">
+                            <img src="{% static 'images/Ssslider01.png' %}" alt="image01" width="320">
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="section primary-section">
+            <div class="container">
+                <!-- Start title section -->
+                <div class="title">
+                    <h1>Что мы делаем?</h1>
+                    <!-- Section's title goes here -->
+                    <p>Наша команда не только занимается установкой ОП Linux. А так же обучает пользователей ПК правильно управлять и настраивать данную систему. Помимо этого мы активно проводим лекции и различные мероприятия. </p>
+                    <!--Simple description for section goes here. -->
+                </div>
+                <div class="row-fluid">
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="circle-border zoom-in">
+                                <img class="img-circle" src="{% static 'images/Service1.png' %}" alt="service 1">
+                            </div>
+                            <h3>Дизайн</h3>
+                            <p>Мы поможем настроить определенный дизайн Linux для вас</p>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="circle-border zoom-in">
+                                <img class="img-circle" src="{% static 'images/Service2.png' %}" alt="service 2" />
+                            </div>
+                            <h3>Улучшенная работоспособность</h3>
+                            <p>Мы поможем реанимировать ваши устаревшие ПК, а так же расскажем вам о нашей системе</p>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="centered service">
+                            <div class="circle-border zoom-in">
+                                <img class="img-circle" src="{% static 'images/Service3.png' %}" alt="service 3">
+                            </div>
+                            <h3>Научим простому управлению</h3>
+                            <p>Мы обучим вас не только как создавать что с помощью Linux, но и научим как сделать это легко и быстро. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}
